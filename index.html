@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
   <title>Axel Arrieta | Portafolio</title>
-  
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-        <h1>Axel Arrieta</h1>
-        <img src="axel.jpeg" alt="Foto de Axel Arrieta" />
+    <h1>Axel Arrieta</h1>
+      <img src="axel.jpeg" alt="Foto de Axel Arrieta" class="foto-redonda" />
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -24,75 +24,65 @@
     </nav>
   </header>
 
-  <section id="inicio">
-    
+  <main>
+    <section id="inicio">
 
-  </section>
-
-  <section id="sobremi">
-        <div class="perfil">
-    <p>Soy estudiante de la Tecnicatura Universitaria en Programación en la UTN. Me interesa aprender y crecer en el mundo del desarrollo de software.</p>
-  </section>
-
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-        <!-- Proyecto 1 -->
-        <div class="proyectos">
-          <h3>Proyecto 1 - Desarrollo Web</h3>
-          
-          <!-- Aquí mencionamos que trabajaste en grupo -->
-          <p>Este proyecto fue realizado en conjunto con mi grupo de la facultad, <strong>Null Pointer</strong>.</p>
-          
-          <!-- Breve descripción del proyecto -->
-          <p>El proyecto consta en que en grupo de personas sumemos conocimientos nuevos y ademas agregemos proyectos grupales como lo es el portfolio del grupo</p>
-        </div>
       
-        <!-- Puedes agregar más proyectos debajo de este bloque -->
+    <section id="sobremi">
+      <div class="perfil">
+        <p>
+          Soy estudiante de la Tecnicatura Universitaria en Programación en la UTN. Me interesa aprender y crecer en el mundo del desarrollo de software, especialmente en desarrollo web y automatización con Python.
+        </p>
+      </div>
+    </section>
 
-        <h3>Proyecto 2 - Desarrollo Web</h3>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
 
-        <p>Este proyecto cuenta con la informacion de mi portfolio</p>
+      <div class="proyecto">
+        <h3>Proyecto 1 - Desarrollo Web Grupal</h3>
+        <p>Este proyecto fue realizado junto con mi grupo de la facultad, <strong>Null Pointer</strong>.</p>
+        <p>Consistió en el desarrollo de un portafolio grupal donde cada integrante aportó sus conocimientos y habilidades, permitiendo aprender en equipo y mostrar nuestro progreso académico.</p>
+      </div>
 
+      <div class="proyecto">
+        <h3>Proyecto 2 - Portafolio Personal</h3>
+        <p>Desarrollo de mi portafolio web personal donde presento mis habilidades, proyectos y datos de contacto. Fue creado con HTML, CSS y JavaScript como parte de mi formación en la UTN.</p>
+      </div>
+    </section>
 
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git y GitHub</li>
+      </ul>
+    </section>
 
-      </section>
-      
-    </div>
-    <!-- Agregá más proyectos acá -->
-  </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Git y GitHub</li>
-    </ul>
-  </section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form id="form-contacto">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Axel Arrieta. Todos los derechos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
-  
 </body>
 </html>
